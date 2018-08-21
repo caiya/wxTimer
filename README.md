@@ -6,8 +6,12 @@
 
 ## 功能：  
 1、最基础的当然就是倒计时功能了。  
-2、可以设置倒计时结束后执行的事件。  
+2、可以设置倒计时结束后执行的事件。
 3、可以设置倒计时执行过程中每隔多少秒，执行一次对应的事件。  
+
+## 倒计时效果：  
+
+![](https://raw.githubusercontent.com/caiya/wxTimer/master/1.png)
 
 ## 在JS中调用
 ##### 引入  
@@ -92,8 +96,8 @@ wxTimer.stop();
 ```
 ## 注意： 
 
-1、由于内部需要调用到小程序的setData方法，所以我们需要把this传过去。  
-2、此方法会在page中生成一个名为wxTimer和wxTimerList的数据，请保证这些key没有被占用
+1、由于内部需要调用到小程序的setData方法，所以我们需要把this传过去。
+2、此方法会在page中生成一个名为wxTimer和wxTimerList的数据，请保证这些key没有被占用。
 3、请在data中添加一条属性wxTimerList:{},否则将会报错。
 
 ## 其他参数：  
