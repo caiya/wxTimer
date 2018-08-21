@@ -1,6 +1,6 @@
 var wxTimer = function(initObj) {
   initObj = initObj || {};
-  this.leftTime = initObj.leftTime || "00:00:00"; //开始时间
+  this.leftTime = initObj.leftTime || 0; //开始时间
   this.interval = initObj.interval || 1; //间隔时间
   this.complete = initObj.complete; //结束任务
   this.intervalFn = initObj.intervalFn; //间隔任务
